@@ -7,11 +7,11 @@
     <title>Pet Adoption</title>
 </head>
 <body>
+    <section
     <div id="card1" class="card">
         <div class="card-side front">
             <div>Astro</div>
             <img src="../petAdoptionApp/assets/Astro.jpg"
-        
         </div>
         <div class="card-side back">
           <div>
@@ -29,7 +29,8 @@
             <p>Bobby is a 2yr old puppy full of energy and ready to love</p>
           </div>
         </div>
-    </div>
+    </div>    
+    
     <div id "card3" class="card">
         <div class="card-side front">
           <div>MeowMeowFuzzyFace</div>
@@ -40,7 +41,9 @@
             <p>MeowMeowFuzzyFace is a 3yr old kitten whose looking for a forever home</p>
           </div>
         </div>
+        
     </div>
+</section>
     <style>
         body {
   font-family: Roboto;
@@ -65,13 +68,16 @@
 .card:hover .card-side.back {
   transform: rotateY(0deg);
 }
-.card {
+.card1 .card2 .card3 {
   perspective: 150rem;
   margin: 2em auto;
   height: 40rem;
   max-width: 400px;
   box-shadow: none;
   background: none;
+  justify-content: space-around;
+  /* display: flex; */
+  /* justify-content: space-between; */
 }
 .card-side {
   height: 25rem;
