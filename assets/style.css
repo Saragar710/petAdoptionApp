@@ -1,0 +1,40 @@
+body {
+    font-family: Roboto;
+    background: #FFF4E2;
+    font-size: 30px;
+    cursor:url("https://i.ibb.co/znc4JFh/cursor-1.png "), auto;
+  }
+  .card-side.back {
+    transform: rotateY(-180deg);
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%,#C850C0 46%, #FFCC70 100%);
+  }
+  .card-side.front {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  }
+  
+  .card:hover .card-side.front {
+    transform: rotateY(180deg);
+  }
+  
+  .card:hover .card-side.back {
+    transform: rotateY(0deg);
+  }
+  .card {
+    perspective: 150rem;
+    margin: 2em auto;
+    height: 40rem;
+    max-width: 400px;
+    box-shadow: none;
+    background: none;
+  }
+  .card1 .card-side.front  {
+    background-image:url("../assets/puppie-with-dandelion.jpg");
+  }
+  .card2 .card-side.front {
+    background-image: url("../assets/Puppy-with-tongue-sticking-out.jpg");
+  }
+  .card3 .card-side.front{
+    background-image: url("../assets/MeowMeowFuzzyFace.jpg");
+  }
