@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/style.css">
+    <!-- <link rel="stylesheet" href="../assets/style.css"> -->
     <title>Pet Adoption</title>
 </head>
 <body>
+    <header>
+        <h1> ADOPT US!!</h1>
+        <p>We are here to help you pick your new best friend!</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="news.asp">News</a></li>
+            <li><a href="contact.asp">Contact</a></li>
+            <li><a href="about.asp">About</a></li>
+          </ul>
+    </nav>
     
     <div id="card1" class="card">
         <div class="card-side front">
             <div>Astro</div>
-            <img src="../petAdoptionApp/assets/Astro.jpg"
+            <img src="../petAdoptionApp/assets/Astro.jpg">
         </div>
         <div class="card-side back">
           <div>
@@ -22,7 +34,7 @@
     <div id"card2" class="card">
         <div class="card-side front">
           <div>Bobby</div>
-          <img src="../petAdoptionApp/assets/Bobby.jpg"
+          <img src="../petAdoptionApp/assets/Bobby.jpg">
         </div>
         <div class="card-side back">
           <div>
@@ -34,7 +46,7 @@
     <div id "card3" class="card">
         <div class="card-side front">
           <div>MeowMeowFuzzyFace</div>
-          <img src="../petAdoptionApp/assets/MeowMeowFuzzyFaceRs.jpg"
+          <img src="../petAdoptionApp/assets/MeowMeowFuzzyFaceRs.jpg">
         </div>
         <div class="card-side back">
           <div>
@@ -54,11 +66,11 @@
 .card-side.back {
   transform: rotateY(-180deg);
   background-color: #4158D0; 
-  background-image: linear-gradient(43deg, #4158D0 0%,#C850C0 46%, #FFCC70 100%); 
+  /* background-image: linear-gradient(43deg, #4158D0 0%,#C850C0 46%, #FFCC70 100%);  */
 }
 .card-side.front {
    background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); 
+  /* background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);  */
 }
 
 .card:hover .card-side.front {
@@ -68,7 +80,7 @@
 .card:hover .card-side.back {
   transform: rotateY(0deg);
 }
-.card1 .card2 .card3 {
+.card1{
   perspective: 150rem;
   margin: 2em auto;
   height: 40rem;
@@ -76,7 +88,29 @@
   box-shadow: none;
   background: none;
   justify-content: space-around;
-  /* display: flex; */
+   display: flex; 
+  /* justify-content: space-between; */
+}
+.card2{
+  perspective: 150rem;
+  margin: 2em auto;
+  height: 40rem;
+  max-width: 400px;
+  box-shadow: none;
+  background: none;
+  justify-content: space-around;
+   display: flex; 
+  /* justify-content: space-between; */
+}
+.card3{
+  perspective: 150rem;
+  margin: 2em auto;
+  height: 40rem;
+  max-width: 400px;
+  box-shadow: none;
+  background: none;
+  justify-content: space-around; 
+  display: flex; 
   /* justify-content: space-between; */
 }
 .card-side {
@@ -84,7 +118,7 @@
   border-radius: 15px;
   transition: all 0.8s ease;
   backface-visibility: hidden;
-  position: absolute;
+  position:;
   top: 0;
   left: 0;
   width: 80%;
