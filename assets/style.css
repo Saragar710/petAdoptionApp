@@ -1,4 +1,7 @@
 .div {
   position: relative;
-  display: -ms-flexbox;
+  display: flex;
+}
+.header {
+  background-color: blue;
 }
